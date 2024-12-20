@@ -1,0 +1,131 @@
+.basket {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.basket h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.basket-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.basket-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.basket-item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.basket-item-info h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.basket-item-info p {
+    font-size: 16px;
+    color: #555;
+}
+
+.remove-button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.remove-button:hover {
+    background-color: #ff0000;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.quantity-button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.quantity-button:hover {
+    background-color: #e0e0e0;
+}
+
+.quantity-button:disabled {
+    background-color: #f9f9f9;
+    color: #aaa;
+}
+
+.basket-total {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.checkout-button {
+    width: 240px;
+    height: 50px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.checkout-button:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 480px) {
+    .basket h2 {
+        font-size: 20px;
+    }
+
+    .basket-item-info h3 {
+        font-size: 16px;
+    }
+
+    .basket-item-info p {
+        font-size: 14px;
+    }
+
+    .remove-button,
+    .quantity-button,
+    .checkout-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .basket-total {
+        font-size: 16px;
+    }
+}

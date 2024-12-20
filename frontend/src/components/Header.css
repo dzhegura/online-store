@@ -1,0 +1,48 @@
+.Header {
+    width: 100%;
+    height: 50px;
+    background-color: #9ed0f8;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Header ul {
+    display: flex;
+    gap: 15px;
+}
+
+.Header li {
+    width: 140px;
+    height: 100%;
+    list-style: none;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Header li:hover {
+    background-color: #61b5ff;
+}
+
+@media (max-width: 768px) {
+    .Header {
+        height: auto;
+        padding: 10px 20px;
+    }
+
+    .Header ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .Header li {
+        width: 100%;
+        line-height: 40px;
+        font-size: 16px;
+        padding: 10px 0;
+    }
+}
